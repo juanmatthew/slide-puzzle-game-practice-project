@@ -34,3 +34,31 @@ window.onload = function(){
         }
     }
 };
+
+function dragStart() {
+    currTile = this; //this is the tile being dragged
+}
+
+function dragOver(event) {
+    event.preventDefault();
+}
+
+function dragEnter(event) {
+    event.preventDefault();
+}
+
+function dragLeave() {
+    
+}
+
+function dragDrop() {
+    otherTile = this; //the tile being dropped
+}
+
+function dragEnd() {
+    let currImg = currTile.src;
+    let otherImg = otherTile.src;
+
+    currTile.src = otherImg;
+    otherTile.src = currImg 
+}
