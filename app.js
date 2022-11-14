@@ -22,6 +22,9 @@ window.onload = function(){
             tile.id = r.toString() + "-" + c.toString();
             tile.src = imgOrder.shift() + ".jpg";
 
+
+            //the images aren't loading! What am I doing wrong?
+
             //to drag the tiles
             tile.addEventListener("dragstart", dragStart);  //click an image to drag
             tile.addEventListener("dragover", dragOver);    //to move an image over while clicked
